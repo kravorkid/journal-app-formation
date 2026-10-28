@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:android": "ionic cap run android -l --external",
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test.e2e": "cypress run",
@@ -12,18 +13,26 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@capacitor/android": "8.5.3",
     "@capacitor/app": "8.1.2",
+    "@capacitor/camera": "^8.2.6",
     "@capacitor/core": "8.5.3",
+    "@capacitor/geolocation": "^8.2.4",
     "@capacitor/haptics": "8.0.2",
+    "@capacitor/ios": "8.5.3",
     "@capacitor/keyboard": "8.0.6",
+    "@capacitor/preferences": "^8.0.1",
     "@capacitor/status-bar": "8.0.4",
     "@ionic/react": "^9.0.0",
     "@ionic/react-router": "^9.0.0",
+    "axios": "^1.21.0",
+    "capacitor-native-settings": "^8.2.0",
     "ionicons": "^8.1.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-router": "^6.30.0",
-    "react-router-dom": "^6.30.0"
+    "react-router-dom": "^6.30.0",
+    "zustand": "^5.0.16"
   },
   "devDependencies": {
     "@capacitor/cli": "8.5.3",

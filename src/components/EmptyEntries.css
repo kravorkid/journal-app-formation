@@ -1,0 +1,18 @@
+.empty-entries {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 64px;
+  text-align: center;
+}
+
+.empty-entries h2 {
+  margin: 32px 0 8px;
+  font-weight: 700;
+}
+
+.empty-entries p {
+  margin: 0 0 24px;
+  max-width: 280px;
+  color: var(--ion-color-medium);
+}

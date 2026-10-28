@@ -1,0 +1,9 @@
+.entry-photo {
+  position: relative;
+}
+
+.entry-photo ion-button {
+  position: absolute;
+  top: 4px;
+  right: 4px;
+}

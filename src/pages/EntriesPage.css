@@ -1,0 +1,15 @@
+.entries-title {
+  margin: 8px 0 20px;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+.entries-new {
+  margin-bottom: 28px;
+}
+
+.entries-skeleton {
+  height: 96px;
+  margin-bottom: 20px;
+  border-radius: 16px;
+}
