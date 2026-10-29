@@ -10,6 +10,8 @@ import EntriesPage from './pages/EntriesPage'
 import EntryDetailPage from './pages/EntryDetailPage'
 import NewEntryPage from './pages/NewEntryPage'
 import RequireAuth from './components/RequireAuth'
+import SystemInfoPage from './pages/SystemInfoPage'
+
 import { useAuthStore, selectIsAuthenticated } from './store/auth-store'
 
 import '@ionic/react/css/core.css';
@@ -50,6 +52,7 @@ const App: React.FC = () => {
             <Route path="/entries/:id" element={<RequireAuth><EntryDetailPage /></RequireAuth>} />
             <Route path="/new-entry" element={<RequireAuth><NewEntryPage /></RequireAuth>} />
             <Route path="/settings" element={<RequireAuth><Settings /></RequireAuth>} />
+            <Route path="/settings/system-info" element={<RequireAuth><SystemInfoPage /></RequireAuth>} />
           </IonRouterOutlet>
           <IonTabBar slot="bottom" style={isAuthenticated ? undefined : { display: 'none' }}>
             <IonTabButton tab="entries" href="/entries">

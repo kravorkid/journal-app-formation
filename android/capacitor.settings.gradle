@@ -25,3 +25,6 @@ project(':capacitor-status-bar').projectDir = new File('../node_modules/@capacit
 
 include ':capacitor-native-settings'
 project(':capacitor-native-settings').projectDir = new File('../node_modules/capacitor-native-settings/android')
+
+include ':sysinfo-plugin'
+project(':sysinfo-plugin').projectDir = new File('../plugins/sysinfo-plugin/android')

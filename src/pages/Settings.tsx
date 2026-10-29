@@ -32,11 +32,10 @@ export default function Settings() {
               </IonLabel>
             </IonToggle>
           </IonItem>
-          <IonItem>
+          <IonItem routerLink="/settings/system-info" detail>
             <IonIcon aria-hidden="true" icon={informationCircleOutline} slot="start" />
             <IonLabel>
               <h3>Informations système</h3>
-              <p>Aucune connexion nécessaire pour le moment.</p>
             </IonLabel>
           </IonItem>
           <IonItem>
