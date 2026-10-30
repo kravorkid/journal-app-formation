@@ -1,2 +1,12 @@
 /* For information on how to create your own theme, please refer to:
 http://ionicframework.com/docs/theming/ */
+
+.app-version-tag {
+  font-size: 0.7rem;
+}
+
+.app-version-footer {
+  padding: 2px 0;
+  text-align: center;
+  background: var(--ion-background-color);
+}

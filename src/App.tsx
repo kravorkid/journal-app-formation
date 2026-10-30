@@ -3,7 +3,6 @@ import { Navigate, Route } from 'react-router-dom'
 import { IonApp, IonRouterOutlet, setupIonicReact, IonTabs, IonTabBar, IonTabButton, IonIcon, IonLabel } from '@ionic/react'
 import { IonReactRouter } from '@ionic/react-router'
 import { homeOutline, addCircleOutline, settingsOutline } from 'ionicons/icons'
-
 import AuthPage from './pages/AuthPage'
 import Settings from './pages/Settings'
 import EntriesPage from './pages/EntriesPage'
@@ -11,6 +10,8 @@ import EntryDetailPage from './pages/EntryDetailPage'
 import NewEntryPage from './pages/NewEntryPage'
 import RequireAuth from './components/RequireAuth'
 import SystemInfoPage from './pages/SystemInfoPage'
+import AppModalUpdateAvailable from './components/AppModalUpdateAvailable'
+import AppVersionTag from './components/AppVersionTag'
 
 import { useAuthStore, selectIsAuthenticated } from './store/auth-store'
 
@@ -54,6 +55,7 @@ const App: React.FC = () => {
             <Route path="/settings" element={<RequireAuth><Settings /></RequireAuth>} />
             <Route path="/settings/system-info" element={<RequireAuth><SystemInfoPage /></RequireAuth>} />
           </IonRouterOutlet>
+          <div className="app-version-footer"><AppVersionTag /></div>
           <IonTabBar slot="bottom" style={isAuthenticated ? undefined : { display: 'none' }}>
             <IonTabButton tab="entries" href="/entries">
               <IonIcon icon={homeOutline} />
@@ -69,6 +71,7 @@ const App: React.FC = () => {
             </IonTabButton>
           </IonTabBar>
         </IonTabs>
+        <AppModalUpdateAvailable />
       </IonReactRouter>
     </IonApp>
   )

@@ -3,7 +3,7 @@ import { cameraOutline, informationCircleOutline, locationOutline, logOutOutline
 import PageHeader from '../components/PageHeader'
 import PermissionItem from '../components/PermissionItem'
 import { usePermissions } from '../hooks/use-permissions'
-import { APP_VERSION } from '../config'
+import AppVersionTag from '../components/AppVersionTag'
 import { useAuthStore } from '../store/auth-store'
 import { useSettingsStore } from '../store/settings-store'
 
@@ -42,7 +42,7 @@ export default function Settings() {
             <IonIcon aria-hidden="true" icon={settingsOutline} slot="start" />
             <IonLabel>
               <h3>Version de l'app</h3>
-              <p>{APP_VERSION}</p>
+              <p><AppVersionTag /></p>
             </IonLabel>
           </IonItem>
         </IonList>
